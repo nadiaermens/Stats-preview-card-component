@@ -107,6 +107,11 @@ section {
     display: block;
 }
 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     line-height: 1;
 }
