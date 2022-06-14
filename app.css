@@ -203,6 +203,10 @@ p {
     font-size: 20px;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
+    padding: 10px 0px 0px 0px;
+}
+
+.number:first-child {
     padding: 20px 0px 0px 0px;
 }
 
@@ -212,12 +216,53 @@ p {
     line-height: 1;
     font-size: 10px;
     letter-spacing: 2;
+    padding: 0px 0px 0px 0px;
 }
 
-.names:last-child {
+.list3 .names {
     padding: 0px 0px 30px 0px;
 }
 
 .insights {
     color: hsl(277, 64%, 61%);
+}
+
+@media(min-width: 800px) {
+
+    body {
+        max-width: 150vh;
+    }
+
+    .panel {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 500px;
+        max-width: 500px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+
+    }
+
+    .text {
+        order: 1;
+        flex-wrap: wrap;
+        padding: 50px 60px;
+        text-align: left;
+    }
+
+    .list {
+        order: 2;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 30px;
+    }
+
+    .image {
+        order: 3;
+        max-width: 500px;
+        max-height: 500px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 15px;
+    }
 }
